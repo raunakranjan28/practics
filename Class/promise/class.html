@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car{
+            constructor(name,color){
+                this.name=name
+                this.color=color
+            }
+
+            run(){
+                console.log(this.name+" is running")
+            }
+        }
+        
+        class BMW extends car{
+            price(){
+                console.log(this.name+" costs is 1cr")
+            }
+        }
+
+        let audi=new car('audi','red')
+        let porsche=new car('porsche','black')
+
+    </script>
+</body>
+</html>

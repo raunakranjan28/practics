@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=new WeakMap();
+        let obj1={"name":'raunak'}
+        let obj2={"city":"vadodara"}
+        
+        x.set(obj1,"hey raunak")
+        x.set(obj2,"hey vadodara")
+        console.log(x.get(obj1))
+        console.log(x.get(obj2))
+    </script>
+</body>
+</html>

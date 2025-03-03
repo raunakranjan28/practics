@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function rest1(a,b,...args){
+
+           let sum=a+b;
+
+            for(n of args){
+                sum=sum+n;
+            }
+            return sum;
+        }
+
+        let result=rest1(2,4,5,6,78,9)
+
+        console.log(result)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person ={
+            fname:"raunak",
+            lname:"sharma"
+        }
+
+        let printfullname=function(hometown){
+
+            console.log(this.fname+" "+ this.lname+" "+"from"+" "+hometown)
+        }
+        let person2={
+            fname:"deepak",
+            lname:"sharma"
+        } 
+
+        printfullname.call(person2,"mumbai")
+
+    </script>
+</body>
+</html>

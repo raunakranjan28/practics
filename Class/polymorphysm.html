@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class shape{
+            constructor(length){
+                this.length=length;
+            }
+            draw(){
+                return 'this is shape'
+            }
+
+        }
+        class square extends shape{
+             draw(){
+                return 'this is square'
+            }
+        }
+        class circle extends shape{
+            draw(){
+               return 'this is circle'
+           }
+       }
+
+       class rectangle extends shape{
+        draw(){
+           return 'this is rectangle'
+       }
+   }
+
+   let a= new circle;
+   let b= new square;
+   let c= new rectangle;
+   console.log(a.draw())
+   console.log(b.draw())
+   console.log(c.draw())
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p = new Promise((resolve, reject) => {
+            console.log("1st");
+        
+            setTimeout(() => {
+                console.log("hey");
+                 reject("Something went wrong!");// Rejecting the promise
+                resolve("you did it"); 
+               
+            }, 5000);
+        });
+        
+        p.then((message) => console.log("success:",message))
+        p.catch((error) => console.log("error:", error)); // Catching the error
+    </script>
+</body>
+</html>

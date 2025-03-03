@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+            }
+
+            job(){
+                console.log(this.name+" is an developer")
+            }
+
+        }
+
+        class per extends person{
+            constructor(name,age,city,lastname){
+                super(name,age)
+                this.city=city;
+                this.lastname=lastname;
+            }
+            fullname(){
+                console.log(this.name+" "+ this.lastname);
+            }
+
+        }
+        let a=new per("raunak",20,"vadodara","ranjan")
+        console.log(a.fullname())
+        console.log(a.job())
+
+
+    </script>
+</body>
+</html>

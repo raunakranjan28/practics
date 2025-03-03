@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x= new WeakSet();
+        let obj1={ name : "Raunak"}
+        let obj2={ name : "Ranjan"}
+        let obj3={ name : "sharma"}
+
+        x.add(obj1)
+        x.add(obj2)
+        x.add(obj1)
+
+        console.log(x.has(obj1))
+        console.log(x.has(obj2))
+        console.log(x.has(obj3))
+
+    </script>
+</body>
+</html>

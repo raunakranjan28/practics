@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function grandParent() {
+            let a = "Hello";
+        
+            function parent() {
+                let b = "World";
+        
+                function child() {
+                    console.log(a, b); // Can access both a & b
+                }
+        
+                child();
+            }
+        
+            parent();
+        }
+        
+        grandParent(); 
+    </script>
+</body>
+</html>

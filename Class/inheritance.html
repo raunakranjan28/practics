@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(name,age,salary){
+                this.name=name;
+                this.age=age;
+                this.salary=salary;
+            }
+
+            bonus(){
+                return this.salary+1000;
+            }
+
+        }
+
+        class tntra extends person{
+
+            constructor(name,age,salary,city){
+                super(name,age,salary)
+                this.city=city;
+            }
+
+        }
+
+        let me= new tntra('Raunak',21,60000,'vadodara')
+
+        console.log(me.salary)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student={
+            maths:90,
+            science:89,
+            av: function fn(){
+                (() =>{
+                    console.log(this.maths+this.science)/2
+                    
+                })()
+            }
+        }
+        student.av()
+    </script>
+</body>
+</html>
